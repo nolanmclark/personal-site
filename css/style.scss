@@ -1,0 +1,369 @@
+$primary: rgba(231, 76, 60, 1);
+
+@font-face {
+    font-family: Custom;
+    src: url('../assets/fonts/averta.woff') format('woff'), url('../assets/fonts/averta.otf') format('opentype');
+  }
+
+* {
+    font-family: Custom, 'Hind', -apple-system, sans-serif;
+}
+
+a:hover {
+  color: $primary - 40;
+}
+
+a h3:hover {
+  color: $primary - 40;
+}
+
+h3 a:hover {
+  color: $primary - 40;
+}
+
+.about h3 a:hover {
+  color: $primary - 40;
+}
+
+p a:hover {
+  color: $primary - 40;
+}
+
+li a:hover {
+  color: $primary - 40;
+}
+
+.intro a:hover {
+  color: $primary - 40;
+}
+
+.intro a:hover #arrow {
+  color: $primary - 40;
+}
+.project a h1:hover {
+
+}
+
+.project a h1:hover .arrow {
+  -webkit-animation: bounce 1s infinite;
+  -moz-animation: bounce 1s infinite;
+  -o-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+  position: absolute;
+}
+
+// Random Color Button CSS
+
+#randomColor {
+  padding: 10px;
+  background-color: $primary;
+  position: fixed;
+  left: 10px;
+  border-radius: 10px;
+  z-index: 99;
+}
+
+.getColor {
+  color: $primary;
+}
+
+// Back to the top
+
+#to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 15px;
+  z-index: 99;
+  display: none;
+  cursor: pointer;
+}
+
+// Arrow Bounce CSS
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+#arrow {
+  -webkit-animation: bounce 1s infinite;
+  -moz-animation: bounce 1s infinite;
+  -o-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+  color: $primary;
+  position: absolute;
+}
+
+// Intro
+
+.intro {
+  padding: 120px 100px;
+  height: 80vh;
+}
+
+.intro h1 {
+  font-size: 3.5em;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: $primary;
+  letter-spacing: 0px;
+}
+.intro p {
+  margin-top: 5px;
+  font-size: 2em;
+  line-height: 1.6em;
+}
+
+.intro a {
+  color: $primary;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.about, .skills, .projects, .contact {
+  padding: 30px 100px;
+}
+
+.all {
+  display: grid;
+  grid-template-columns: 33.334% 66.667%;
+}
+
+.section-title {
+  text-align: left;
+}
+
+.section-title h1 {
+  font-size: 1.5em;
+  color: $primary;
+  margin-top: 0;
+}
+
+.section-content h3 {
+  font-size: 1em;
+  margin: 0;
+  line-height: 2em;
+  font-weight: 400;
+}
+
+.section-content h3 a {
+    color: $primary;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.section-content h3 a:visited {
+    color: $primary;
+}
+
+.section-end-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.about .resume, .about .linkedin {
+  padding: 15px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 0;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.resume {
+  background-color: $primary;
+  color: #fff;
+  border: 2px solid $primary;
+  transition: .5s all ease-in-out;
+}
+
+.resume:hover {
+  background-color: $primary - 40;
+  color: #fff;
+  border: 2px solid $primary - 40;
+}
+
+.linkedin {
+  color: $primary;
+  border: 2px solid $primary;
+  background-color: #fff;
+  transition: .5s all ease-in-out;
+}
+
+.linkedin:hover {
+  background-color: $primary;
+  color: #fff;
+  border: 2px solid $primary;
+  color: #fff;
+}
+
+.section-content {
+
+}
+
+/* Skill Section */
+.category-title {
+  margin-bottom: 30px;
+}
+.category-title h2 {
+  font-size: 1.5em;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.item-container {
+  text-align: left;
+}
+
+.item-container ul {
+  padding-left: 0;
+  margin: 10px 0;
+}
+
+.category-item {
+  list-style: none;
+  padding: 0px 10px;
+  border: 2px solid $primary;
+  color: $primary;
+  margin: 4px 2px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: .3s ease-in-out;
+  font-weight: 700;
+}
+
+// .category-item:hover {
+//   color: #fff;
+//   background-color: $primary;
+//   border-radius: 10px;
+// }
+
+/* Project */
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project-title a {
+  text-decoration: none;
+  color: #000;
+}
+
+.project-title a:visited {
+  color: #000;
+}
+
+.project-title h1 {
+  margin: 0;
+}
+
+.project-title h3 {
+  margin: 0;
+  color: $primary;
+  font-weight: 700;
+}
+
+.project-content p {
+  margin: 5px 0;
+}
+
+/* Contact */
+
+.contactMe {
+  h1 {
+    margin-top: 0;
+    font-size: 1.5em
+  }
+  p {
+    margin-top: 0;
+    font-size: 1.2em;
+    line-height: 2em;
+  }
+  a {
+    color: $primary;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .social {
+
+  }
+  .social ul {
+    padding: 0;
+  }
+  .social li {
+    display: inline-block;
+    font-weight: 900;
+    color: $primary;
+    list-style: none;
+    margin: 10px 20px 10px 0;
+    font-size: 1.1em;
+    text-align: center;
+  }
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  font-size: .7em;
+  color: #aaa;
+}
+
+
+
+/* RESPONSIVE */
+
+ @media (max-width: 675px) {
+   .intro {
+     padding: 10px 30px;
+     height: 100vh;
+   }
+
+   .section-end-links {
+     display: flex;
+     flex-direction: column;
+   }
+
+   #randomColor {
+     visibility: hidden;
+     display: none;
+   }
+
+   .intro p {
+     font-size: 1.2em;
+   }
+
+   .all {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about, .skills, .projects, .contact {
+    padding: 30px;
+    border-bottom: 1px #eee solid;
+  }
+
+  .section-title h1 {
+    font-size: 2.2em;
+  }
+ }
